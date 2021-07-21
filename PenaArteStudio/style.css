@@ -1,0 +1,212 @@
+*{
+    margin: 0; /*superior, direita, inferioir, esquerda*/
+    padding: 0; /*enchimento*/
+    font-family:'roboto', sans-serif, verdana;
+}
+
+body{
+    width: 100%;
+}
+.siteLogotipo{
+     height: 150px;
+     width: 150px;
+     border-radius: 50%; 
+}
+
+nav{
+    /*background-image: url("img/barra3.jpg");*/
+    text-align: center;
+    /*border-top:1px solid #AEC3B0;*/
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+nav a{
+    color: #AEC3B0; 
+    text-decoration: none;/*tirar sublinhado*/
+    font-variant: small-caps; /*maiúsculas pequenas*/
+    padding-top: 12px; /*enchimento em cima*/
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    font-size: 17px; /*tamanho letra*/
+    font-weight: bold;
+    /*display: block;*/
+    /*float: left;*/
+}
+
+.navbar{
+    border-top:1px solid #AEC3B0;
+    height: 35px;
+}
+
+.navbar a:hover{
+    color: #01161E;
+    background-color: #f0efeb;
+    border-top:2px solid  #AEC3B0;
+}
+
+header{
+    position: relative;
+    top: 230px; /*só funciona se tiver o position definido, seja o top, left, right ou bottom*/
+    text-align: center;
+}
+
+h1{
+    font-size: 20px; /*tamanho da letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #01161E;
+}
+
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3{
+    text-align: left;
+    font-size: 17px;
+    padding-left: 350px;
+}
+
+.redes{/*LOGOTIPOS*/
+    height: 30px; /*altura*/
+    /*filter: grayscale(50%);*/
+    padding-top: 2px; /*enchimento em cima*/
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    /*filter: drop-shadow(8px 8px 10px gray);*/
+}
+
+.redes:hover{
+    filter: grayscale(0%);
+}
+
+main{
+    position: relative;
+    top:250px;
+    margin-bottom: 500px;
+    width: 100%;
+    margin:auto;
+}
+
+footer{
+    /*background-image:url("img/barra3.jpg");*/
+    /*background-color: #AEC3B0;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0efeb;
+    border-top:1px solid  #AEC3B0;
+}
+
+.centrar{
+    text-align: center;    
+}
+
+
+.row{
+    display: flex;
+}  
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.imagens{
+    height: 300px;
+    padding-left: 300px;
+    padding-right: 20px;
+}
+
+.bio{
+    text-align: justify;
+    padding-right: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+    background-color: #AEC3B0;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    
+    
+}
+
+/*galeria*/
+
+#galeria{
+    /*width: 1500px;*/
+    width: auto;
+    margin: auto;   
+    height: auto;
+    position: relative;
+    /*left:40px;*/
+    height: 700px;
+
+}
+div.descricao {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+
+ /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column {
+        float: left;
+        width: 50%;
+    }
+  } 
+  
+#textoBemvindo{
+      height: 150px;
+      padding-top: 100px;
+      padding-right: 100px;
+      text-align: center;
+   }
+
+.mapa{
+        padding-left: 100px;
+   }
+
+.contactoMsg{
+    text-align: justify;
+    padding-left: 20px;
+    font-size: 17px;
+}
